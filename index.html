@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda De Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lily+Script+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css"
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./agenda.jpg" alt="Agenda">
+            <h1>Agenda De Contatos</h1>
+        </header>
+        <form id="form-atividade">
+            <input type="text" id="nome-atividade" required placeholder="Nome Do Contato" />
+            <input type="tel" id="nota-atividade" required placeholder="Número Do Contato" />
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome Do Contato
+                    </th>
+                    <th>
+                        Número Do Contato
+                    </th>
+                    <th>
+                        Adicionar?
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Contato Final</td>
+                    <td>15 998787878</td>
+                    <td>Beatriz</td>
+                    <td><span class="resultado aprovado">Aprovado</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
