@@ -8,12 +8,14 @@ form.addEventListener('submit', function(e) {
     const inputNotaAtividade = document.getElementById('nota-atividade');
 
     let linha = '<tr>';
-    linha += `<td>${input.NomeAtividade.value}</td>`;
-    linha += `<td>${input.NotaAtividade.value}</td>`;
-    linha += '</tr>';
+    linha += `<td>${inputNomeAtividade.value}</td>`;
+    linha += `<td>${inputNotaAtividade.value}</td>`;
+    linha += `</tr>`;
 
     linhas += linha
 
     const corpoTabela = document.querySelector('tbody');
     corpoTabela.innerHTML = linhas;
 });
+
+
